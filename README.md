@@ -77,17 +77,17 @@ Navigate to the Tweaks tab in winutil and select the following options:
       > Removes or limits spying features in Microsoft Edge.
 ## Advanced Tweaks
     - Disable Background Apps
-      > Stops Microsoft Store apps from running in the background.
+         - [Stops Microsoft Store apps from running in the background.]
     - Disable Microsoft Copilot
     - Disable Intel MM (vPro LMS)
-      > Mitigates potential massive network security risks. [ https://christitustech.github.io/winutil/dev/tweaks/z--Advanced-Tweaks---CAUTION/DisableLMS1/ ]
+         - [Mitigates potential massive network security risks.] [ https://christitustech.github.io/winutil/dev/tweaks/z--Advanced-Tweaks---CAUTION/DisableLMS1/ ]
     - Disable Notification Tray/Calendar
-      > (Optional) – If you prefer a cleaner interface.
+         - [(Optional) – If you prefer a cleaner interface.]
     - Set Display for Performance
-      > (Optional) – Optimizes settings for performance.
+         - [(Optional) – Optimizes settings for performance.]
     - Set Classic Right-Click Menu
     - Remove Microsoft Edge
-      > Prevents Edge from reinstalling with updates.
+         - [Prevents Edge from reinstalling with updates.]
     - Block Razer Software Installs (peripherals still work without the bloatware)
     - Remove OneDrive (finally)
 - After making your selections, click Run Tweaks at the bottom.
@@ -104,17 +104,18 @@ Tip: Don’t be alarmed if your screen takes a moment to reset after a new tweak
 ## Configurations
 Switch to the Config tab to adjust additional settings. Recommended actions include:
 
-  > -Disable Search Box Web Suggestions in Registry
-  > -Prevents app searches from redirecting to Internet Explorer.
+     > - Disable Search Box Web Suggestions in Registry
+     > - Prevents app searches from redirecting to Internet Explorer.
 Under Fixes:
-  > -Select Remove Adobe Creative Cloud to eliminate unwanted Adobe software.
+
+     > - Select Remove Adobe Creative Cloud to eliminate unwanted Adobe software.
 
 
 ### Installing Applications (Optional)
 
-  > - This section is optional and reflects my personal recommendations for a fresh Windows 11 setup.
+     > - This section is optional and reflects my personal recommendations for a fresh Windows 11 setup.
 
-# Recommended Applications
+# Recommended Applications (PREFERENCE)
   Browsers:
   
     > Advanced Security: Brave
@@ -123,44 +124,47 @@ Under Fixes:
 
   Communications:
   
-    > Discord (as needed)
+    > - Discord (as needed)
 
   Development Tools:
   
-    > Miniconda (for Python)
-    > GitHub Desktop
-    > JetBrains Toolbox
-    > Python Version Manager
-    > Python3
-    > Sublime Text
-    > VS Code
+    > - Miniconda (for Python)
+    > - GitHub Desktop
+    > - JetBrains Toolbox
+    > - Python Version Manager
+    > - Python3
+    > - Sublime Text
+    > - VS Code
+ 
   Document Editing:
   
-    > Obsidian
-    > LibreOffice
-    > Foxit PDF Editor
+    > - Obsidian
+    > - LibreOffice
+    > - Foxit PDF Editor
+    
   Games (Preferences):
   
-    > Cemu
-    > EA App
-    > Epic Games Launcher
-    > GeForce NOW
-    > Itch.io
-    > Steam
-    > XEMU
+    > - Cemu
+    > - EA App
+    > - Epic Games Launcher
+    > - GeForce NOW
+    > - Itch.io
+    > - Steam
+    > - XEMU
+    
   Microsoft Tools (Preferences):
   
-    > Autoruns (startup manager)
-    > NuGet
+    > - Autoruns (startup manager)
+    > - NuGet
  
   Multimedia Tools (Preferences):
   
-    > Audacity (music production)
-    > FFMPEG
-    > GIMP (free Photoshop alternative)
-    > OBS Studio (livestreaming/recording)
-    > Spotify
-    > VLC Video Player
+    > - Audacity (music production)
+    > - FFMPEG
+    > - GIMP (free Photoshop alternative)
+    > - OBS Studio (livestreaming/recording)
+    > - Spotify
+    > - VLC Video Player
   
   Pro Tools (Preferences):
   
