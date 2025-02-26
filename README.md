@@ -195,7 +195,7 @@ Click Uninstall Selected and wait for the process to complete.
 
 
 ### Changing Startup Programs ###
-TO view what programs run at atartup, and change them, open up Task Manger and head to the "StartUp" tab. 
+TO view what programs run at startup, and change them, open up **Task Manger** and head to the ***"StartUp"*** tab. 
 Here is a sample of what that looks like.
 
 
@@ -205,11 +205,14 @@ Here is a sample of what that looks like.
 
 
 
-You can right click and disable any application you dont want to automatically open when your computer starts from here.
+You can right click and disable any application you dont want to automatically open when your computer starts, from here.
 
 
 ### Other Unwanted Programs ###
-
+   You may have other programs that you dont wish to have on your computer, such as McAfee The simplist way to attempt to uninstall a program is through the settings. This wont always work of course, as Edge isnt an option to uninstall here, amongst some others. (fun little fact about microsoft there)
+   > Start > Settings > Apps > Apps and Features
+    - Search "McAfee"
+   > Right click and uninstall McAfee Antivirus (basically malware itself)
 
 
 ### Congratulations! ###
