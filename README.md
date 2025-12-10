@@ -70,69 +70,69 @@ Click on the **"Tweaks"** tab at the top of the winutil window. This is where yo
 
 | Tweak | What it does (in plain English) |
 |-------|--------------------------------|
-| ✅ **Create Restore Point** | Creates a backup so you can undo changes if something goes wrong. **ALWAYS do this first!** |
-| ✅ **Disable Telemetry** | Stops Windows from collecting data about how you use your computer |
-| ✅ **Disable Wi-Fi Sense** | Stops Windows from auto-connecting to random shared networks |
-| ✅ **Set Services to Manual** | Stops unnecessary background programs from running |
-| ✅ **Disable Location Tracking** | Stops Windows from tracking where you are |
-| ✅ **Disable Activity History** | Stops Windows from keeping a history of everything you do |
-| ✅ **Disable ConsumerFeatures** | Stops Windows from auto-installing sponsored apps and showing ads |
-| ✅ **Delete Temporary Files** | Frees up disk space by removing junk files |
-| ✅ **Run Disk Cleanup** | Removes old Windows files you don't need |
-| ✅ **Enable End Task With Right Click** | Adds a handy "End Task" option when you right-click apps on the taskbar |
-| ⚙️ **Disable GameDVR** | Stops Xbox game recording feature (skip if you use Xbox features) |
-| ⚙️ **Disable Storage Sense** | Stops Windows from automatically deleting your files |
-| ⚙️ **Disable Powershell 7 Telemetry** | Stops PowerShell from sending usage data |
-| ⚙️ **Prefer IPv4 over IPv6** | Can improve internet connection on some networks |
+| **Create Restore Point** | Creates a backup so you can undo changes if something goes wrong. **ALWAYS do this first!** |
+| **Disable Telemetry** | Stops Windows from collecting data about how you use your computer |
+| **Disable Wi-Fi Sense** | Stops Windows from auto-connecting to random shared networks |
+| **Set Services to Manual** | Stops unnecessary background programs from running |
+| **Disable Location Tracking** | Stops Windows from tracking where you are |
+| **Disable Activity History** | Stops Windows from keeping a history of everything you do |
+| **Disable ConsumerFeatures** | Stops Windows from auto-installing sponsored apps and showing ads |
+| **Delete Temporary Files** | Frees up disk space by removing junk files |
+| **Run Disk Cleanup** | Removes old Windows files you don't need |
+| **Enable End Task With Right Click** | Adds a handy "End Task" option when you right-click apps on the taskbar |
+| **Disable GameDVR** | Stops Xbox game recording feature (skip if you use Xbox features) |
+| **Disable Storage Sense** | Stops Windows from automatically deleting your files |
+| **Disable Powershell 7 Telemetry** | Stops PowerShell from sending usage data |
+| **Prefer IPv4 over IPv6** | Can improve internet connection on some networks |
 
 
 ### Advanced Tweaks - AI & Cloud Features (Use with CAUTION)
 
 > ⚠️ **Warning:** These tweaks make bigger changes to your system. Make sure you created a Restore Point first!
 
-#### 🤖 AI Features to Disable
+#### AI Features to Disable
 
 | Tweak | What it does (in plain English) |
 |-------|--------------------------------|
-| 🚨 **Disable Recall** | **CRITICAL!** Stops Windows from taking screenshots of everything you do. Major privacy concern - highly recommended! |
-| 🚨 **Disable Microsoft Copilot** | Removes Windows AI assistant completely |
+| **Disable Recall** | **CRITICAL!** Stops Windows from taking screenshots of everything you do. Major privacy concern - highly recommended! |
+| **Disable Microsoft Copilot** | Removes Windows AI assistant completely |
 
-#### ☁️ Cloud Features to Disable
-
-| Tweak | What it does (in plain English) |
-|-------|--------------------------------|
-| ☁️ **Remove OneDrive** | Completely removes Microsoft cloud storage from your computer |
-| ☁️ **Disable Background Apps** | Stops Microsoft Store apps from syncing in the background |
-
-#### 🌐 Browser & Edge
+#### Cloud Features to Disable
 
 | Tweak | What it does (in plain English) |
 |-------|--------------------------------|
-| 🌐 **Edge Debloat** | Removes tracking features from Microsoft Edge |
-| 🌐 **Remove Microsoft Edge** | Completely removes Edge browser |
+| **Remove OneDrive** | Completely removes Microsoft cloud storage from your computer |
+| **Disable Background Apps** | Stops Microsoft Store apps from syncing in the background |
 
-#### ⚡ Performance & Interface
+#### Browser & Edge
 
 | Tweak | What it does (in plain English) |
 |-------|--------------------------------|
-| ⚡ **Set Classic Right-Click Menu** | Brings back the full Windows 10 right-click menu |
-| ⚡ **Set Display for Performance** | Makes Windows look simpler but run faster |
+| **Edge Debloat** | Removes tracking features from Microsoft Edge |
+| **Remove Microsoft Edge** | Completely removes Edge browser |
+
+#### Performance & Interface
+
+| Tweak | What it does (in plain English) |
+|-------|--------------------------------|
+| **Set Classic Right-Click Menu** | Brings back the full Windows 10 right-click menu |
+| **Set Display for Performance** | Makes Windows look simpler but run faster |
 | ⚡ **Set Hibernation as Default** | Better for laptop battery life |
 | ⚡ **Disable Notification Tray/Calendar** | Removes distracting notifications |
 | ⚡ **Remove Home and Gallery from Explorer** | Cleans up File Explorer sidebar |
 
-#### 🔒 Security & Privacy
+#### Security & Privacy
 
 | Tweak | What it does (in plain English) |
 |-------|--------------------------------|
-| 🔒 **Disable Intel MM (vPro LMS)** | Closes a security hole in Intel computers |
-| 🔒 **Block Razer Software Installs** | Stops Razer bloatware |
-| 🔒 **Adobe Debloat** | Removes Adobe background processes |
-| 🔒 **Run OO Shutup 10** | Opens a tool for more privacy settings |
+| **Disable Intel MM (vPro LMS)** | Closes a security hole in Intel computers |
+| **Block Razer Software Installs** | Stops Razer bloatware |
+| **Adobe Debloat** | Removes Adobe background processes |
+| **Run OO Shutup 10** | Opens a tool for more privacy settings |
 
 ---
 
-### 🎛️ Preferences Tab - More AI/Cloud Settings
+### Preferences Tab - More AI/Cloud Settings
 
 Click the **"Preferences"** tab in winutil. These settings also help disable AI and cloud features:
 
@@ -148,7 +148,7 @@ Here is an example of my preferences:
 
 ---
 
-### ▶️ Running the Tweaks
+### Running the Tweaks
 
 1. After checking all the boxes you want, scroll to the bottom
 2. Click the **"Run Tweaks"** button
@@ -295,7 +295,7 @@ You can right click and disable any application you dont want to automatically o
 
 ---
 
-## 🔧 Manual Windows Settings (Final Step)
+## Manual Windows Settings (Final Step)
 
 Some AI and cloud features can't be disabled through winutil - you'll need to turn these off manually in Windows Settings. This is the **last step** after running all winutil tweaks.
 
@@ -321,14 +321,14 @@ Press **Windows key + I** on your keyboard, or click Start > Settings
 | **Settings > Personalization > Taskbar** | Turn OFF "Copilot (preview)" if visible |
 | **Settings > Apps > Startup** | Disable any AI assistants that auto-start |
 
-> 💡 **Tip:** After making these changes, restart your computer to ensure everything takes effect.
+> **Tip:** After making these changes, restart your computer to ensure everything takes effect.
 
 ---
 
 ### Feedback & Support ###
-  - 🐛 **Found a bug or outdated info?** [Open an issue](../../issues)
-  - 💡 **Have a suggestion?** Pull requests are welcome!
-  - 📅 **Last verified:** December 2025 (winutil v25.12.01)
+  - **Found a bug or outdated info?** [Open an issue](../../issues)
+  - **Have a suggestion?** Pull requests are welcome!
+  - **Last verified:** December 2025 (winutil v25.12.01)
   
 > **Note:** This guide references [Chris Titus Tech's winutil](https://github.com/ChrisTitusTech/winutil) which is actively maintained. Check the [official documentation](https://winutil.christitus.com/) for the latest features.
 
