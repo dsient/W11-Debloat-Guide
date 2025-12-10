@@ -8,8 +8,8 @@
 
 ## ⚠️ Disable S Mode Before Continuing
 
-If you can’t download or run apps from the internet, your device might be locked in **S Mode**. To exit S Mode, follow these steps:  
-[Turn off S Mode](https://ysu.teamdynamix.com/TDClient/2000/Portal/KB/ArticleDet?ID=164015)
+If you can't download or run apps from the internet, your device might be locked in **S Mode**. To exit S Mode, follow these steps:  
+[Turn off S Mode (Official Microsoft Guide)](https://support.microsoft.com/en-us/windows/switching-out-of-s-mode-in-windows-4f56d9be-99ec-6983-119f-031bfb28a307)
 
 ---
 
@@ -20,7 +20,8 @@ If you can’t download or run apps from the internet, your device might be lock
 - [Uninstalling Unwanted Applications](#uninstalling-unwanted-applications)
 - [Changing Startup programs](#changing-startup-programs)
 - [Other Unwanted Programs](#other-unwanted-programs)
-- [Congratulations!](#congratulations!)
+- [Manual Windows Settings (Final Step)](#-manual-windows-settings-final-step)
+- [Congratulations](#congratulations)
 - [Feedback & Support](#feedback--support)
 
 ---
@@ -29,86 +30,153 @@ If you can’t download or run apps from the internet, your device might be lock
 
 ### Using Winutil to Debloat Windows 11
 
-We’ll use **Chris Titus Tech's winutil** to disable unwanted settings and uninstall bloatware.  
-[Winutil on GitHub](https://github.com/ChrisTitusTech/winutil)
+We'll use **Chris Titus Tech's winutil** to disable unwanted settings and uninstall bloatware.  
+[Winutil on GitHub](https://github.com/ChrisTitusTech/winutil) | [Official Documentation](https://winutil.christitus.com/)
 
 #### How to Run Winutil
 
 1. **Open PowerShell in Administrator Mode**  
-   Right-click the PowerShell icon and choose **Run as administrator**.
+   - Press the **Windows key** on your keyboard
+   - Type `PowerShell`
+   - Right-click on **Windows PowerShell** and select **Run as administrator**
+   - Click **Yes** if prompted by User Account Control
 
-2. **Execute the Command**
+2. **Copy and Paste This Command**
 
    ```powershell
    irm "https://christitus.com/win" | iex
-> Note:
-> 
-> - irm is an alias for Invoke-RestMethod, which fetches the script from the URL.
-> - The pipe | passes the script to iex (Invoke-Expression) to execute it.
-> - This command doesn’t “install” winutil; run it each time you use it.
-> This will begin loading the app. It does not install, so running this command everytime you use it is necessary.
->
+   ```
 
+> **What does this do?**
+> - `irm` downloads the winutil script from the internet
+> - `iex` runs the downloaded script  
+> - This does NOT permanently install anything - run this command each time you want to use winutil
 
-You will first see something like this:
+3. **Wait for Winutil to Load**
+
+You will see a window like this:
+
 ![image](https://github.com/user-attachments/assets/da332e48-915c-4a8b-b3f2-321a42d0b5ba)
 
-Selecting Tweaks
-Navigate to the Tweaks tab in winutil and select the following options:
+---
 
-## Essential Tweaks:
+## Selecting Tweaks
 
-    - Create Restore Point
-      > Backup in case something goes wrong.
-    - Disable Recall
-      > Disables Windows 11’s AI screenshot feature. 10,000% recommend turning this off.
-    - Disable Wifi-sense
-      > Prevents auto-connecting to shared networks (especially important for laptops) I recommend reading this: [ https://www.techtarget.com/searchenterpriseai/feature/Privacy-and-security-risks-surrounding-Microsoft-Recall ]
-    - Set Hibernation as Default
-      > Good for laptop battery life.
-    - Set Services to Manual
-      > Stops unnecessary background processes.
-    - Disable Location Tracking
-    - Disable GameDVR
-      > (Optional) – Skip if you need Xbox features.
-    - Disable Telemetry
-      > Prevents intrusive data collection (note: this may affect Edge, but you DO NOT want to be using Edge anyways.).
-    - Debloat Edge
-      > Removes or limits spying features in Microsoft Edge.
-## Advanced Tweaks
-    - Disable Background Apps
-         - [Stops Microsoft Store apps from running in the background.]
-    - Disable Microsoft Copilot
-    - Disable Intel MM (vPro LMS)
-         - [Mitigates potential massive network security risks.] [ https://christitustech.github.io/winutil/dev/tweaks/z--Advanced-Tweaks---CAUTION/DisableLMS1/ ]
-    - Disable Notification Tray/Calendar
-         - [(Optional) – If you prefer a cleaner interface.]
-    - Set Display for Performance
-         - [(Optional) – Optimizes settings for performance.]
-    - Set Classic Right-Click Menu
-    - Remove Microsoft Edge
-         - [Prevents Edge from reinstalling with updates.]
-    - Block Razer Software Installs (peripherals still work without the bloatware)
-    - Remove OneDrive (finally)
-- After making your selections, click Run Tweaks at the bottom.
-- This process may take some time and might restart your computer.
+Click on the **"Tweaks"** tab at the top of the winutil window. This is where you'll disable unwanted Windows features.
 
-## Preferences Tab:
-Winutil also has a Preferences tab where you can adjust settings that apply automatically.
-Here is mine incase you wanna pick my brain apart:
+**How to use:** Find each item listed below and **click the checkbox** next to it to select it.
+
+### Essential Tweaks (Safe - Recommended for Everyone)
+
+| Tweak | What it does (in plain English) |
+|-------|--------------------------------|
+| ✅ **Create Restore Point** | Creates a backup so you can undo changes if something goes wrong. **ALWAYS do this first!** |
+| ✅ **Disable Telemetry** | Stops Windows from collecting data about how you use your computer |
+| ✅ **Disable Wi-Fi Sense** | Stops Windows from auto-connecting to random shared networks |
+| ✅ **Set Services to Manual** | Stops unnecessary background programs from running |
+| ✅ **Disable Location Tracking** | Stops Windows from tracking where you are |
+| ✅ **Disable Activity History** | Stops Windows from keeping a history of everything you do |
+| ✅ **Disable ConsumerFeatures** | Stops Windows from auto-installing sponsored apps and showing ads |
+| ✅ **Delete Temporary Files** | Frees up disk space by removing junk files |
+| ✅ **Run Disk Cleanup** | Removes old Windows files you don't need |
+| ✅ **Enable End Task With Right Click** | Adds a handy "End Task" option when you right-click apps on the taskbar |
+| ⚙️ **Disable GameDVR** | Stops Xbox game recording feature (skip if you use Xbox features) |
+| ⚙️ **Disable Storage Sense** | Stops Windows from automatically deleting your files |
+| ⚙️ **Disable Powershell 7 Telemetry** | Stops PowerShell from sending usage data |
+| ⚙️ **Prefer IPv4 over IPv6** | Can improve internet connection on some networks |
+
+
+### Advanced Tweaks - AI & Cloud Features (Use with CAUTION)
+
+> ⚠️ **Warning:** These tweaks make bigger changes to your system. Make sure you created a Restore Point first!
+
+#### 🤖 AI Features to Disable
+
+| Tweak | What it does (in plain English) |
+|-------|--------------------------------|
+| 🚨 **Disable Recall** | **CRITICAL!** Stops Windows from taking screenshots of everything you do. Major privacy concern - highly recommended! |
+| 🚨 **Disable Microsoft Copilot** | Removes Windows AI assistant completely |
+
+#### ☁️ Cloud Features to Disable
+
+| Tweak | What it does (in plain English) |
+|-------|--------------------------------|
+| ☁️ **Remove OneDrive** | Completely removes Microsoft cloud storage from your computer |
+| ☁️ **Disable Background Apps** | Stops Microsoft Store apps from syncing in the background |
+
+#### 🌐 Browser & Edge
+
+| Tweak | What it does (in plain English) |
+|-------|--------------------------------|
+| 🌐 **Edge Debloat** | Removes tracking features from Microsoft Edge |
+| 🌐 **Remove Microsoft Edge** | Completely removes Edge browser |
+
+#### ⚡ Performance & Interface
+
+| Tweak | What it does (in plain English) |
+|-------|--------------------------------|
+| ⚡ **Set Classic Right-Click Menu** | Brings back the full Windows 10 right-click menu |
+| ⚡ **Set Display for Performance** | Makes Windows look simpler but run faster |
+| ⚡ **Set Hibernation as Default** | Better for laptop battery life |
+| ⚡ **Disable Notification Tray/Calendar** | Removes distracting notifications |
+| ⚡ **Remove Home and Gallery from Explorer** | Cleans up File Explorer sidebar |
+
+#### 🔒 Security & Privacy
+
+| Tweak | What it does (in plain English) |
+|-------|--------------------------------|
+| 🔒 **Disable Intel MM (vPro LMS)** | Closes a security hole in Intel computers |
+| 🔒 **Block Razer Software Installs** | Stops Razer bloatware |
+| 🔒 **Adobe Debloat** | Removes Adobe background processes |
+| 🔒 **Run OO Shutup 10** | Opens a tool for more privacy settings |
+
+---
+
+### 🎛️ Preferences Tab - More AI/Cloud Settings
+
+Click the **"Preferences"** tab in winutil. These settings also help disable AI and cloud features:
+
+| Setting | Recommendation |
+|---------|---------------|
+| **Bing Search in Start Menu** | Set to **Disable** - stops web searches when you use Start |
+| **Widgets Button in Taskbar** | Set to **Disable** - removes the AI-powered news/weather widget |
+| **Task View Button in Taskbar** | Set to **Disable** - removes timeline/virtual desktop button |
+
+Here is an example of my preferences:
 
 ![image](https://github.com/user-attachments/assets/fce46e75-44a2-43a2-acdb-c7bad6b5f723)
 
-Tip: Don’t be alarmed if your screen takes a moment to reset after a new tweak. Your computer needs time to refresh all systems after changes like these.
+---
 
-## Configurations
-Switch to the Config tab to adjust additional settings. Recommended actions include:
+### ▶️ Running the Tweaks
 
-     > - Disable Search Box Web Suggestions in Registry
-     > - Prevents app searches from redirecting to Internet Explorer.
-Under Fixes:
+1. After checking all the boxes you want, scroll to the bottom
+2. Click the **"Run Tweaks"** button
+3. **Wait patiently** - this may take several minutes
+4. Your computer might restart automatically
 
-     > - Select Remove Adobe Creative Cloud to eliminate unwanted Adobe software.
+> 💡 **Tip:** Don't worry if your screen flickers or goes black briefly. This is normal as Windows applies the changes.
+
+---
+
+## Configurations (Config Tab)
+
+Switch to the **"Config"** tab to access additional settings:
+
+**Features:**
+     > - Enable .NET Framework 3.5 (if needed for older apps)
+     > - Install Windows Sandbox (for safely testing unknown software)
+     > - Install Hyper-V (for virtualization needs)
+     > - Install WSL (Windows Subsystem for Linux)
+
+**Fixes:**
+     > - Run DISM and SFC scans (repairs Windows system files)
+     > - Reset Windows Update (fixes stuck updates)
+     > - Reset Network Settings (fixes connectivity issues)
+     > - Run Adobe CC Cleaner Tool (removes Adobe Creative Cloud completely)
+
+**Legacy Panels:**
+     > - Quick access to classic Control Panel sections (Power, Sound, Network, etc.)
 
 
 ### Installing Applications (Optional)
@@ -164,6 +232,7 @@ Under Fixes:
     > - GIMP (free Photoshop alternative)
     > - OBS Studio (livestreaming/recording)
     > - Spotify
+    > - KDEN Live (video editor)
     > - VLC Video Player
   
   Pro Tools (Preferences):
@@ -222,6 +291,45 @@ You can right click and disable any application you dont want to automatically o
 ### Congratulations! ###
   Your machine should now be far cleaner and better optimized for use.
   Please open an issue or contact me if you find any problems / suggestions to add.
-  Install mint xfce when you want a real computer (jk lol)
+  Install alpine linux =]
+
+---
+
+## 🔧 Manual Windows Settings (Final Step)
+
+Some AI and cloud features can't be disabled through winutil - you'll need to turn these off manually in Windows Settings. This is the **last step** after running all winutil tweaks.
+
+### How to Open Settings
+Press **Windows key + I** on your keyboard, or click Start > Settings
+
+### Cloud Features to Disable
+
+| Setting Location | What to Change |
+|-----------------|----------------|
+| **Settings > Accounts > Windows backup** | Turn OFF "Remember my apps" and "Remember my preferences" |
+| **Settings > System > Clipboard** | Turn OFF "Clipboard history" and "Sync across devices" |
+| **Settings > Privacy & security > Find my device** | Turn OFF "Find my device" |
+| **Settings > Privacy & security > General** | Turn OFF all 4 toggles (advertising ID, language list, app launches, suggested content) |
+| **Settings > Privacy & security > Diagnostics & feedback** | Turn OFF "Send optional diagnostic data" and "Tailored experiences" |
+| **Settings > Privacy & security > Activity history** | Turn OFF "Store my activity history on this device" |
+
+### AI Features to Disable
+
+| Setting Location | What to Change |
+|-----------------|----------------|
+| **Settings > Privacy & security > Search permissions** | Turn OFF "Cloud content search" for both Microsoft and Work/School accounts |
+| **Settings > Personalization > Taskbar** | Turn OFF "Copilot (preview)" if visible |
+| **Settings > Apps > Startup** | Disable any AI assistants that auto-start |
+
+> 💡 **Tip:** After making these changes, restart your computer to ensure everything takes effect.
+
+---
+
+### Feedback & Support ###
+  - 🐛 **Found a bug or outdated info?** [Open an issue](../../issues)
+  - 💡 **Have a suggestion?** Pull requests are welcome!
+  - 📅 **Last verified:** December 2025 (winutil v25.12.01)
+  
+> **Note:** This guide references [Chris Titus Tech's winutil](https://github.com/ChrisTitusTech/winutil) which is actively maintained. Check the [official documentation](https://winutil.christitus.com/) for the latest features.
 
 
