@@ -1,4 +1,4 @@
-# Windows 11 Debloat & Setup Guide
+# Windows [10/11] Debloat & Setup Guide
 
 > **If you just got a Windows 11 device, you might want to debloat it—remove unnecessary software like Internet Explorer, preinstalled antiviruses (e.g., McAfee trials), and change the default privacy settings.**  
 >  
